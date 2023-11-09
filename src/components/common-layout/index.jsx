@@ -1,9 +1,9 @@
 'use client'
-
 import Sidebar from "../sidebar/index"
 import Header from "../header/index"
 import { usePathname } from "next/navigation"
-import Dashboard from "@/app/dashboard/page"
+import Dashboard from "../../app/dashboard/page";
+
 const CommonLayout = ({children}) => {
   const pathName = usePathname();
   return (
@@ -15,7 +15,7 @@ const CommonLayout = ({children}) => {
                 <Header/>
                 <div className="mx-auto min-h-screen p-2 !pt-[10px] md:p-2">{ 
                 pathName === '/' ? 
-                <Dashboard/> :
+              <Dashboard/> :
                 children }</div>
             </div>
         </main>

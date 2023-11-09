@@ -21,7 +21,8 @@ const Sidebar = () => {
         </div>
       </div>
     <div>
-      <ul className="mb-auto mt-20 pt-1">
+      <div className="mb-7 mt-[50px] h-px bg-[#ffc46b]" />
+      <ul className="mb-auto pt-1">
         {
           routes.map((routeItem, index)=>{
             return <Link key={index} href={routeItem.layout}>
